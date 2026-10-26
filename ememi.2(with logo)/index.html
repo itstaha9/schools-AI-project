@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d16">
+  <meta name="description" content="سامانه مدیریت مدرسه امامی آل آقا">
+  <title>مدرسه امامی آل آقا | پنل مدیریت</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#overview">
+      <div class="brand-mark"><img src="logo-emblem.jpg" alt="نشان مدرسه امامی آل آقا"></div>
+      <div><strong>امامی آل آقا</strong><small>سامانه مدیریت مدرسه</small></div>
+    </a>
+    <div class="school-chip"><span class="live-dot"></span> سال تحصیلی ۱۴۰۵–۱۴۰۶</div>
+    <nav class="nav">
+      <span class="nav-label">منوی اصلی</span>
+      <a class="nav-item active" href="#overview" data-page="overview"><span class="nav-icon">◫</span> نمای کلی</a>
+      <a class="nav-item" href="#people" data-page="people"><span class="nav-icon">♙</span> اعضای مدرسه <span class="nav-count">۱۲</span></a>
+      <a class="nav-item" href="#evaluations" data-page="evaluations"><span class="nav-icon">◎</span> ارزیابی ماهانه</a>
+      <a class="nav-item" href="#tasks" data-page="tasks"><span class="nav-icon">▤</span> پیگیری فعالیت‌ها</a>
+      <a class="nav-item" href="#reports" data-page="reports"><span class="nav-icon">▥</span> گزارش‌ها</a>
+      <span class="nav-label second-label">مدیریت</span>
+      <a class="nav-item" href="#calendar" data-page="calendar"><span class="nav-icon">▦</span> تقویم مدرسه</a>
+      <a class="nav-item" href="#settings" data-page="settings"><span class="nav-icon">⚙</span> تنظیمات</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-icon">✦</div><strong>قدم‌به‌قدم بهتر شو</strong><p>عملکرد مدرسه را شفاف‌تر دنبال کنید.</p><button id="helpBtn">راهنمای سامانه <span>←</span></button></div>
+      <div class="user-mini"><div class="avatar avatar-purple">م</div><div><strong>مدیر مدرسه</strong><small>دسترسی مدیر</small></div><button aria-label="گزینه‌های حساب">•••</button></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="menuBtn" aria-label="باز کردن منو">☰</button>
+      <div class="breadcrumbs"><span>پنل مدیریت</span><b>/</b><strong id="crumbTitle">نمای کلی</strong></div>
+      <div class="top-actions">
+        <div class="search-wrap"><span>⌕</span><input id="globalSearch" placeholder="جست‌وجو در سامانه..." aria-label="جست‌وجو"></div>
+        <button class="icon-button" id="notificationBtn" aria-label="اعلان‌ها">♧<i></i></button>
+        <div class="top-divider"></div>
+        <div class="top-user"><div class="avatar avatar-purple">م</div><div><strong>مدیر مدرسه</strong><small>مدرسه امامی آل آقا</small></div><span class="chevron">⌄</span></div>
+      </div>
+    </header>
+
+    <section class="page active-page" id="overview">
+      <div class="welcome-row reveal">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> شنبه، ۲ آبان ۱۴۰۵</div><h1>خوش آمدید، مدیر عزیز <span class="wave">✦</span></h1><p>نمایی روشن از عملکرد امروز مدرسه‌تان؛ همه‌چیز در یک نگاه.</p></div>
+        <button class="primary-btn" id="newEvaluation"><span>＋</span> ثبت ارزیابی جدید</button>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="hero-copy"><div class="hero-kicker"><span class="spark">✦</span> مرکز فرماندهی مدرسه</div><h2>مدیریت بهتر،<br><em>آینده‌ای روشن‌تر.</em></h2><p>عملکرد اعضای مدرسه را بررسی کنید، فعالیت‌ها را پیگیری کنید و با ارزیابی‌های منظم، مسیر پیشرفت را هموار سازید.</p><button class="hero-btn" data-goto="evaluations">مشاهده ارزیابی‌ها <span>←</span></button></div>
+        <div class="hero-visual" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="hero-core"><img class="core-logo" src="logo-emblem.jpg" alt="نشان مدرسه"><div class="core-caption">IMAMI SCHOOL</div></div><div class="float-card float-top"><span class="float-icon green">↗</span><div><small>نظم و پیگیری</small><strong>در مسیر پیشرفت</strong></div></div><div class="float-card float-bottom"><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div><small>گزارش عملکرد</small><strong>ماهانه و یکپارچه</strong></div></div><div class="hero-star star-one">✧</div><div class="hero-star star-two">✦</div></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="section-heading reveal"><div><h2>وضعیت مدرسه</h2><p>خلاصه‌ای از اطلاعات ثبت‌شده در سامانه</p></div><button class="subtle-btn" data-goto="reports">مشاهده گزارش کامل <span>←</span></button></div>
+      <div class="stats-grid reveal">
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon violet">♙</span><span class="stat-trend neutral">اعضای ثبت‌شده</span></div><div class="stat-number" data-count="124">۱۲۴</div><div class="stat-label">کل اعضای مدرسه</div><div class="stat-foot"><span>●</span> معلمان، معاونان و دانش‌آموزان</div><div class="stat-spark spark-violet"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon cyan">◎</span><span class="stat-trend up">↑ ۱۲٪</span></div><div class="stat-number">۸۶٪</div><div class="stat-label">میانگین تکمیل فعالیت‌ها</div><div class="progress-track"><span style="width:86%"></span></div><div class="stat-foot">در مقایسه با ماه گذشته</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon amber">◷</span><span class="stat-trend neutral">نیازمند پیگیری</span></div><div class="stat-number">۱۸</div><div class="stat-label">فعالیت باز</div><div class="stat-foot"><span class="amber-text">●</span> فعالیت‌های در انتظار بررسی</div><div class="stat-spark spark-amber"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon green">✓</span><span class="stat-trend up">این ماه</span></div><div class="stat-number">۳۲</div><div class="stat-label">ارزیابی ثبت‌شده</div><div class="progress-track green-track"><span style="width:64%"></span></div><div class="stat-foot">از ۵۰ ارزیابی برنامه‌ریزی‌شده</div></article>
+      </div>
+
+      <div class="content-grid">
+        <section class="panel activity-panel reveal"><div class="panel-heading"><div><h3>فعالیت‌های اخیر</h3><p>آخرین تغییرات و موارد نیازمند توجه</p></div><button class="dots-btn" aria-label="گزینه‌های بیشتر">•••</button></div>
+          <div class="activity-list" id="activityList">
+            <div class="activity-row"><div class="activity-icon purple-bg">◎</div><div class="activity-text"><strong>ارزیابی ماهانه ثبت شد</strong><p>نمونه نمایشی · معاون آموزشی</p></div><span class="activity-time">۲ ساعت پیش</span><span class="status-pill status-done">ثبت‌شده</span></div>
+            <div class="activity-row"><div class="activity-icon blue-bg">▤</div><div class="activity-text"><strong>گزارش فعالیت در انتظار بررسی</strong><p>نمونه نمایشی · گروه آموزشی</p></div><span class="activity-time">امروز</span><span class="status-pill status-review">در انتظار</span></div>
+            <div class="activity-row"><div class="activity-icon orange-bg">♙</div><div class="activity-text"><strong>عضو جدید به فهرست اضافه شد</strong><p>نمونه نمایشی · کادر آموزشی</p></div><span class="activity-time">دیروز</span><span class="status-pill status-new">جدید</span></div>
+            <div class="activity-row"><div class="activity-icon green-bg">✓</div><div class="activity-text"><strong>فعالیت ماهانه تکمیل شد</strong><p>نمونه نمایشی · امور پرورشی</p></div><span class="activity-time">۲ روز پیش</span><span class="status-pill status-done">تکمیل</span></div>
+          </div><button class="panel-link" data-goto="tasks">مشاهده همه فعالیت‌ها <span>←</span></button>
+        </section>
+        <section class="panel evaluation-panel reveal"><div class="panel-heading"><div><h3>وضعیت ارزیابی ماهانه</h3><p>پیشرفت ثبت ارزیابی‌ها در ماه جاری</p></div><span class="month-badge">مهر ۱۴۰۵</span></div>
+          <div class="evaluation-chart"><div class="donut"><div class="donut-inner"><strong>۶۴٪</strong><small>تکمیل‌شده</small></div></div><div class="chart-legend"><div><span class="legend-dot dot-violet"></span><span>تکمیل‌شده</span><strong>۳۲</strong></div><div><span class="legend-dot dot-muted"></span><span>باقی‌مانده</span><strong>۱۸</strong></div><div><span class="legend-dot dot-cyan"></span><span>کل برنامه</span><strong>۵۰</strong></div></div></div>
+          <div class="evaluation-note"><span>✦</span><p>با تکمیل ارزیابی‌های باقی‌مانده، گزارش ماهانه دقیق‌تری خواهید داشت.</p></div><button class="panel-link" data-goto="evaluations">مدیریت ارزیابی‌ها <span>←</span></button>
+        </section>
+      </div>
+      <footer>© ۱۴۰۵ سامانه مدیریت مدرسه امامی آل آقا <span>ساخته‌شده برای نظم، شفافیت و پیشرفت</span></footer>
+    </section>
+
+    <section class="page" id="people">
+      <div class="page-title-row"><div><div class="eyebrow">مدیریت منابع انسانی</div><h1>اعضای مدرسه</h1><p>فهرست اولیه و نمایشی اعضای مدرسه را مدیریت کنید.</p></div><button class="primary-btn" id="addPerson">＋ افزودن عضو</button></div>
+      <div class="filter-row"><div class="search-wrap table-search"><span>⌕</span><input id="peopleSearch" placeholder="نام یا نقش را جست‌وجو کنید..."></div><select id="roleFilter" aria-label="فیلتر نقش"><option value="all">همه نقش‌ها</option><option value="مدیر">مدیر</option><option value="معاون">معاون</option><option value="معلم">معلم</option><option value="دانش‌آموز">دانش‌آموز</option></select></div>
+      <div class="panel table-panel"><div class="table-scroll"><table><thead><tr><th>نام و نام خانوادگی</th><th>نقش</th><th>بخش / پایه</th><th>وضعیت</th><th>عملیات</th></tr></thead><tbody id="peopleTable"></tbody></table></div><div class="table-foot"><span id="peopleCount">۴ عضو نمایشی</span><span>اطلاعات این نسخه آزمایشی است</span></div></div>
+    </section>
+
+    <section class="page" id="evaluations">
+      <div class="page-title-row"><div><div class="eyebrow">سنجش و بهبود عملکرد</div><h1>ارزیابی ماهانه</h1><p>ارزیابی عملکرد اعضا را ثبت و پیگیری کنید.</p></div><button class="primary-btn" id="newEvaluation2">＋ ارزیابی جدید</button></div>
+      <div class="stats-grid compact-stats"><article class="stat-card"><div class="stat-label">کل ارزیابی‌ها</div><div class="stat-number">۳۲</div><div class="stat-foot">در دوره جاری</div></article><article class="stat-card"><div class="stat-label">ثبت‌شده</div><div class="stat-number">۲۴</div><div class="stat-foot">آماده بررسی</div></article><article class="stat-card"><div class="stat-label">در انتظار</div><div class="stat-number">۸</div><div class="stat-foot">نیازمند تکمیل</div></article></div>
+      <div class="panel"><div class="panel-heading"><div><h3>فهرست ارزیابی‌ها</h3><p>نمونه‌های نمایشی برای شروع طراحی</p></div><select class="small-select" id="evalFilter"><option value="all">همه وضعیت‌ها</option><option value="ثبت‌شده">ثبت‌شده</option><option value="در انتظار">در انتظار</option></select></div><div class="table-scroll"><table><thead><tr><th>عضو</th><th>نقش</th><th>دوره</th><th>امتیاز</th><th>وضعیت</th></tr></thead><tbody id="evalTable"></tbody></table></div></div>
+    </section>
+
+    <section class="page" id="tasks"><div class="page-title-row"><div><div class="eyebrow">برنامه‌ریزی و پیگیری</div><h1>پیگیری فعالیت‌ها</h1><p>کارهای مدرسه را بررسی و وضعیت آن‌ها را به‌روز کنید.</p></div><button class="primary-btn" id="addTask">＋ افزودن فعالیت</button></div><div class="task-board" id="taskBoard"></div></section>
+    <section class="page" id="reports"><div class="page-title-row"><div><div class="eyebrow">تصمیم‌گیری بر پایه داده</div><h1>گزارش‌ها</h1><p>خلاصه‌ای از شاخص‌های نمونه برای گزارش‌گیری مدیریتی.</p></div><button class="secondary-btn" id="exportReport">↓ خروجی CSV</button></div><div class="report-grid"><div class="panel report-big"><div class="panel-heading"><div><h3>روند تکمیل فعالیت‌ها</h3><p>مقادیر نمونه برای نمایش رابط کاربری</p></div><span class="month-badge">۶ ماه اخیر</span></div><div class="bar-chart"><div class="bar-column"><span>۵۸٪</span><i style="height:48%"></i><small>فروردین</small></div><div class="bar-column"><span>۶۴٪</span><i style="height:54%"></i><small>اردیبهشت</small></div><div class="bar-column"><span>۶۰٪</span><i style="height:50%"></i><small>خرداد</small></div><div class="bar-column"><span>۷۲٪</span><i style="height:63%"></i><small>شهریور</small></div><div class="bar-column"><span>۷۸٪</span><i style="height:72%"></i><small>مهر</small></div><div class="bar-column"><span>۸۶٪</span><i style="height:84%"></i><small>آبان</small></div></div></div><div class="panel"><div class="panel-heading"><div><h3>شاخص‌های کلیدی</h3><p>نمایش آزمایشی</p></div></div><div class="kpi-list"><div><span>تکمیل فعالیت‌ها</span><strong>۸۶٪</strong></div><div><span>ارزیابی‌های ثبت‌شده</span><strong>۳۲</strong></div><div><span>فعالیت‌های باز</span><strong>۱۸</strong></div><div><span>اعضای مدرسه</span><strong>۱۲۴</strong></div></div></div></div></section>
+    <section class="page" id="calendar"><div class="page-title-row"><div><div class="eyebrow">زمان‌بندی مدرسه</div><h1>تقویم مدرسه</h1><p>برنامه‌ریزی رویدادها و موعد فعالیت‌ها در نسخه‌های بعدی تکمیل می‌شود.</p></div></div><div class="empty-state panel"><div class="empty-icon">▦</div><h3>تقویم شما آماده برنامه‌ریزی است</h3><p>در نسخه اولیه، این بخش نمایشی است. جزئیات تقویم را بعداً مطابق نیاز مدرسه اضافه می‌کنیم.</p></div></section>
+    <section class="page" id="settings"><div class="page-title-row"><div><div class="eyebrow">شخصی‌سازی سامانه</div><h1>تنظیمات</h1><p>مشخصات پایه مدرسه برای این نمونه نمایشی.</p></div></div><div class="panel settings-panel"><div class="setting-row"><div><strong>نام مدرسه</strong><p>عنوانی که در سربرگ سامانه نمایش داده می‌شود.</p></div><input id="schoolNameInput" value="مدرسه امامی آل آقا"></div><div class="setting-row"><div><strong>سال تحصیلی</strong><p>سال تحصیلی فعال</p></div><input value="۱۴۰۵–۱۴۰۶"></div><div class="setting-row"><div><strong>ظاهر سامانه</strong><p>پوسته تاریک مدرن</p></div><span class="status-pill status-done">فعال</span></div><button class="primary-btn" id="saveSettings">ذخیره تغییرات ظاهری</button></div></section>
+  </main>
+
+  <div class="toast" id="toast"><span>✓</span><p></p></div>
+  <div class="modal-backdrop" id="modalBackdrop"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="بستن">×</button><div class="modal-kicker">مدرسه امامی آل آقا</div><h2 id="modalTitle">ثبت اطلاعات</h2><p class="modal-desc" id="modalDesc">اطلاعات موردنظر را وارد کنید.</p><form id="modalForm"></form></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
